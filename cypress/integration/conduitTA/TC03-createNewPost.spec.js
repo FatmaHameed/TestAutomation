@@ -12,11 +12,12 @@ context('create new post', () => {
       cy.get('.btn').contains('Sign in').should('be.visible').click();
       // validate the signIn
       cy.title().should('eq', 'Conduit');
-      cy.contains('Your Feed').should('be.visible');
+      cy.contains('Your Feed', { timeout: 10000 }).should('be.visible');
       cy.get(':nth-child(4) > .nav-link').should('have.text', 'Fatma');
       //creating new post
       cy.get('.container > .nav > :nth-child(2) > .nav-link').click();
       //validate we are in the correct page
+      cy.hash().should('include', '#/editor');
       cy.contains('Publish Article', { timeout: 10000 }).should('be.visible');
       // Type the article
       cy.get(':nth-child(1) > .form-control').type('Test');
