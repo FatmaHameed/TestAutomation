@@ -19,12 +19,21 @@ context('Edit Profile setting', () => {
       //validate we are in the correct page
       cy.hash().should('include', '#/settings');
       // Edit the profile image
-      cy.get(':nth-child(1) > .form-control').type(
-        'https://cdn.britannica.com/w:1100/09/167709-131-36A6A6E8/butterfly-moth-blue-Lepidoptera-insect.jpg',
-      );
+      cy.get(':nth-child(1) > .form-control')
+        .clear()
+        .type(
+          'https://cdn.britannica.com/w:1100/09/167709-131-36A6A6E8/butterfly-moth-blue-Lepidoptera-insect.jpg',
+        );
       cy.get('form > :nth-child(1) > .btn').click();
       // Validate the image is updated in the profile ???
-      cy.get('.user-pic').should('be.visible', { timeout: 10000 });
+      cy.get('.nav-link')
+        .find('img')
+        .should(
+          'have.attr',
+          'src',
+          'https://cdn.britannica.com/w:1100/09/167709-131-36A6A6E8/butterfly-moth-blue-Lepidoptera-insect.jpg',
+        )
+        .should('be.visible', { timeout: 10000 });
     });
   });
 });
