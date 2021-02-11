@@ -1,5 +1,5 @@
 # TestAutomation
-This repository is created to automate some tests cases to test the functionality **"Conduit Website"** using [Cypress.io](https://www.cypress.io/). 
+This repository is created to automate some tests cases to test the functionality [Conduit Website](http://react-redux.realworld.io/#/login?_k=plujfs) using [Cypress.io](https://www.cypress.io/). 
 
 To run those tests in your local machine using operating system (windows10), you should do the following steps:
 
