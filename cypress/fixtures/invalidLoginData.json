@@ -1,0 +1,11 @@
+[{
+  "caseDes": "Incorrect email and correct password",
+  "email": "fatma0@email.com",
+  "password": "fatma123"
+},
+{
+  "caseDes": "Correct email and Incorrect password",
+  "email": "fatma@email.com",
+  "password": "fatma1234"
+}
+]
