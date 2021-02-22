@@ -5,11 +5,15 @@ To run those tests in your local machine using operating system (windows10), you
 
 
 
-  1- Run: **npx cypress open**
+  1- install cypress by running: **npm install cypress --save-dev**
+
+
+  
+  2- Run: **npx cypress open**
 
 
 
-  2- Run the tests by clicking on the selected files.
+  3- Run the tests by clicking on the selected files.
 
 For more information, please visit [Cypress Documentation](https://docs.cypress.io/guides/getting-started/installing-cypress.html#Opening-Cypress)
 
