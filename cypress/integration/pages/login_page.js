@@ -18,6 +18,16 @@ class LoginPage {
     const button = cy.get('[type="submit"]');
     button.click();
   }
+  successfulLogin() {
+    const loginData = require('../../fixtures/valid_login_data.json');
+
+    return (
+      this.visit(),
+      this.fillEmail(loginData.email),
+      this.fillPassword(loginData.password),
+      this.clickSignIn()
+    );
+  }
 }
 
 export default LoginPage;

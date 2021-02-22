@@ -1,4 +1,4 @@
-class NewPostPage {
+class PostPage {
   typeArticleTitle(title) {
     const articleTitle = cy.get('[placeholder="Article Title"]');
     articleTitle.type(title);
@@ -20,4 +20,4 @@ class NewPostPage {
   }
 }
 
-export default NewPostPage;
+export default PostPage;
