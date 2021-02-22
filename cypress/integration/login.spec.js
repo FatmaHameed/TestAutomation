@@ -21,7 +21,7 @@ context('login', () => {
     const invalidLoginData = require('../fixtures/invalid_login_data.json');
 
     invalidLoginData.forEach((invalidDatum) => {
-      it(`unSuccessful login with ${invalidDatum.caseDes}`, () => {
+      it(`unsuccessful login with ${invalidDatum.caseDes}`, () => {
         login.fillEmail(invalidDatum.email);
         login.fillPassword(invalidDatum.password);
         login.clickSignIn();
@@ -29,7 +29,7 @@ context('login', () => {
       });
     });
 
-    it('unSuccessful login with empty password', () => {
+    it('unsuccessful login with empty password', () => {
       login.fillEmail(validLoginData.email);
       login.clickSignIn();
       cy.invalidLogin('email or password is invalid');
