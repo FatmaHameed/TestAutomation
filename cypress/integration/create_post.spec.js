@@ -6,7 +6,6 @@ context('create new post', () => {
   const login = new LoginPage();
   const home = new HomePage();
   const post = new PostPage();
-
   const postData = require('../fixtures/post_data.json');
 
   before(() => {
@@ -33,6 +32,7 @@ context('create new post', () => {
       cy.contains(postData.about);
     });
   });
+
   after(() => {
     cy.get(':nth-child(1) > .preview-link > h1')
       .contains(postData.title)
