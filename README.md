@@ -5,7 +5,7 @@ To run those tests in your local machine using operating system (windows10), you
 
 
 
-  1- Install cypress by running: **npm install cypress --save-dev**
+  1- Install cypress by running: **npm install**
 
 
 
