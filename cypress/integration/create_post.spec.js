@@ -1,6 +1,6 @@
-import LoginPage from './pages/login_page';
-import HomePage from './pages/home_page';
-import PostPage from './pages/post_page';
+import LoginPage from '../pages/login_page';
+import HomePage from '../pages/home_page';
+import PostPage from '../pages/post_page';
 
 context('create new post', () => {
   const login = new LoginPage();

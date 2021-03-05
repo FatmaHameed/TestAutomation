@@ -1,6 +1,6 @@
-import LoginPage from './pages/login_page';
-import HomePage from './pages/home_page';
-import SettingsPage from './pages/settings_page';
+import LoginPage from '../pages/login_page';
+import HomePage from '../pages/home_page';
+import SettingsPage from '../pages/settings_page';
 
 context('Edit Profile setting', () => {
   const login = new LoginPage();

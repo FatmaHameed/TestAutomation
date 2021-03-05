@@ -19,7 +19,7 @@ class LoginPage {
     button.click();
   }
   successfulLogin() {
-    const loginData = require('../../fixtures/valid_login_data.json');
+    const loginData = require('../fixtures/valid_login_data.json');
 
     return (
       this.visit(),
